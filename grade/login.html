@@ -15,7 +15,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <!-- Custom Theme files -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/shoppy/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!--js-->
     <script src="js/jquery-2.1.1.min.js"></script>
 
@@ -35,20 +35,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="login-block">
             <form id="login_in_form">
-                <input type="text" id="loginMobile" name="mobile" placeholder="Mobile" required="">
-                <input type="password" id="loginPassWord" name="password" class="lock" placeholder="Password"
-                       required="">
+                <input type="text" id="loginMobile" name="mobile" placeholder="Mobile">
+                <input type="password" id="loginPassWord" name="password" class="lock" placeholder="Password">
 
                 <div class="forgot-top-grids">
                     <div class="forgot-grid">
                         <ul>
                             <li>
-                                <input type="checkbox" class="loginTeacher" name="type" value="1">
-                                <label><span></span>教师</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="loginTeacher" name="type" value="2">
-                                <label><span></span>学生</label>
+                                <input type="checkbox" id="loginTeacher" name="type" value="1">
+                                <label for="loginTeacher"><span></span>TEACHER?</label>
                             </li>
                         </ul>
                     </div>
