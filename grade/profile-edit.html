@@ -54,7 +54,7 @@
 
                 </section>
             </aside>
-            <aside class="profile-info col-lg-9">
+            <aside class="profile-info col-lg-8">
                 <section class="panel">
                     <div class="bio-graph-heading">
                         个人档案修改
@@ -122,13 +122,15 @@
                         </form>
                     </div>
                 </section>
-                <section>
+                <section class="panel">
                     <div class="panel panel-primary">
-                        <div class="panel-heading">修改密码</div>
+                        <header class="panel-heading">
+                           修改密码
+                        </header>
                         <div class="panel-body">
-                            <form class="form-horizontal" role="form">
+                            <form class="form-horizontal cmxform" role="form" id="signupForm" method="get" action="#">
                                 <div class="form-group">
-                                    <label class="col-lg-2 control-label">当前密码</label>
+                                    <label class="col-lg-2 control-label" >当前密码</label>
 
                                     <div class="col-lg-6">
                                         <input type="password" class="form-control" id="c-pwd" placeholder=" ">
@@ -138,14 +140,14 @@
                                     <label class="col-lg-2 control-label">新密码</label>
 
                                     <div class="col-lg-6">
-                                        <input type="password" class="form-control" id="n-pwd" placeholder=" ">
+                                        <input type="password" class="form-control" id="password" name="password" placeholder=" ">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label">重试密码</label>
 
                                     <div class="col-lg-6">
-                                        <input type="password" class="form-control" id="rt-pwd" placeholder=" ">
+                                        <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder=" ">
                                     </div>
                                 </div>
 
@@ -199,7 +201,8 @@
 
 <!--common script for all pages-->
 <script src="js/common-scripts.js"></script>
-
+<!--script for this page-->
+<script src="js/form-validation-script.js"></script>
 
 </body>
 </html>
